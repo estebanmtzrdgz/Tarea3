@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a Nginx - Tarea 3</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+      color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1.5rem;
+    }
+    .card {
+      background: rgba(31, 41, 55, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 1rem;
+      padding: 2.5rem;
+      max-width: 550px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 1.5rem;
+      background: #009639;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 2rem;
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(0, 150, 57, 0.4);
+    }
+    h1 {
+      font-size: 1.85rem;
+      margin-bottom: 0.75rem;
+      color: #ffffff;
+    }
+    p {
+      color: #9ca3af;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+    .badge-container {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .badge {
+      background: #374151;
+      color: #10b981;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1.25rem;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">N</div>
+    <h1>¡Bienvenido a Nginx!</h1>
+    <p>Esta aplicación web se encuentra desplegada y funcionando correctamente en la infraestructura de AWS.</p>
+    
+    <div class="badge-container">
+      <span class="badge">Nginx Alpine</span>
+      <span class="badge">AWS ECS Fargate</span>
+      <span class="badge">ALB Port 80</span>
+    </div>
+
+    <div class="footer">
+      Tarea 3 &bull; Despliegue con Terraform y Docker
+    </div>
+  </div>
+</body>
+</html>
