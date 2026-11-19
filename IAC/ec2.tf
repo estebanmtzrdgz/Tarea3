@@ -1,10 +1,3 @@
-# Variable para el nombre del Key Pair SSH
-variable "key_name" {
-  description = "Nombre del Key Pair existente en AWS para acceder por SSH"
-  type        = string
-  default     = "llave1"
-}
-
 # 1. Obtener la AMI más reciente de Ubuntu 22.04 LTS (Canonical)
 data "aws_ami" "ubuntu" {
   most_recent = true

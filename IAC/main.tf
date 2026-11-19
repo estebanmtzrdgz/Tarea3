@@ -10,7 +10,7 @@ terraform {
 
 # 1. Configuración del proveedor de AWS
 provider "aws" {
-  region = "us-east-1"
+  region = var.aws_region
 }
 
 # 2. Creación de la VPC

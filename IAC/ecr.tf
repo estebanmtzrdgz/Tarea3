@@ -1,10 +1,3 @@
-# Variable para el nombre del repositorio ECR
-variable "ecr_repository_name" {
-  description = "Nombre del repositorio ECR para la aplicación"
-  type        = string
-  default     = "app-repo"
-}
-
 # 1. Repositorio ECR
 resource "aws_ecr_repository" "app_repo" {
   name                 = var.ecr_repository_name

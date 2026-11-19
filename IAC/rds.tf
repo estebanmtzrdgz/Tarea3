@@ -1,23 +1,3 @@
-# Variables para la base de datos RDS
-variable "db_name" {
-  description = "Nombre de la base de datos inicial de MySQL"
-  type        = string
-  default     = "appdb"
-}
-
-variable "db_username" {
-  description = "Usuario administrador de MySQL"
-  type        = string
-  default     = "admin"
-}
-
-variable "db_password" {
-  description = "Contraseña del administrador de MySQL"
-  type        = string
-  default     = "AdminPass1234!"
-  sensitive   = true
-}
-
 # 1. Grupo de Subnets para RDS (desplegado en subnets privadas de us-east-1a y us-east-1b)
 resource "aws_db_subnet_group" "rds_subnet_group" {
   name        = "main-rds-subnet-group"
