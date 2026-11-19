@@ -25,7 +25,7 @@ data "aws_ami" "ubuntu" {
 # 2. Instancia EC2 tipo micro en la subnet pública con Nginx preinstalado
 resource "aws_instance" "web_server" {
   ami                         = data.aws_ami.ubuntu.id
-  instance_type               = "t2.micro"
+  instance_type               = "t3.micro"
   key_name                    = var.key_name
   subnet_id                   = aws_subnet.public_1.id
   vpc_security_group_ids      = [aws_security_group.web_sg.id]
